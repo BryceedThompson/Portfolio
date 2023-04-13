@@ -1,0 +1,195 @@
+
+/* This provides structure to the entire page. More specificaly giving 0 margin and padding, while setting the box-sizing property allows us to include the padding and border in an element's total width and height.  */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  /*background color for the entire page*/
+body{
+    background-color: dimgray;
+}
+  /*This styles the header of the page and specifies size of it, fonts to use background color, as well as the text color*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: dodgerblue;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  /*This styles all h2 elements on the site*/
+h2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px; 
+}
+  /*This styles all h3 elements on the site*/
+h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px; 
+}
+  /*This styles the navigation bar, but more specificly targets the h1 element in it*/
+.navbar h1{
+    font-size: 50px;
+    background-color: dimgray;
+    padding: 10px;
+    border-radius: 40%;
+    color: white; 
+}
+  /*This styles the list elements in the navigation bar*/
+.navbar ul{
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+  /*This styles all article elements*/
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+  /*This adds an emoji before all article elements*/
+a::before{
+    font-family: Impact;
+    content: '\1F50D';
+    color: white;
+    margin-right: 5px;
+}
+
+  /*This style the content class*/
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 18px;
+}
+
+  /*This styles the About-Me class*/
+.About-Me{
+    flex-wrap: wrap;
+    margin-top: 2%;
+    padding: 25px;
+    color: white; 
+  }
+
+  /*This styles the image in the about me class*/
+.About-Me img{
+    max-width: 100px;
+    border-radius: 100%;
+}
+
+  /*This is styling for the Contact-Info class*/
+.Contact-Info{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+  /*This is for positioning of the list items in the Contact-Info class*/
+.Contact-Info ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+  /*This is styling for the Resume class*/
+.Resume{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px;
+}
+
+  /*This is styling for the work class*/
+.Work {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+  /*This is styling for the project class.*/
+.project {
+    display: flex;
+    padding: 15px;
+    height: 400px;
+    width: 400px;
+    justify-content:flex-end;
+}
+
+  /*This is styling for the project-main class. We also made this section bigger than the other project classes*/
+.project-main {
+    display: flex;
+    padding: 15px;
+    height: 400px;
+    width: 820px;
+    justify-content:flex-end;
+    background-image: url("./images/01-html-css-git-homework-demo.png");
+    background-size: cover;
+}
+
+  /*This is styling for the headers within the project classes*/
+.project header {
+    padding: 10px;
+    background:dodgerblue;
+    color: white;
+    text-align: left;
+}
+
+  /*These are the background images for the different project classes one throught four*/
+.one {
+    background-image: url("./images/filler\ 1.jpg");
+}
+
+.two {
+    background-image: url("./images/filler\ 2.jpg");
+}
+  
+.three {
+    background-image: url("./images/filler\ 3.jpg"); 
+}
+
+.four{
+    background-image: url("./images/filler\ 4.jpg");
+}
+
+  /*This styles how our buttons look*/
+button {
+    margin: 10px;
+    font-size: 200%;
+    color: #13293d;
+    border: 3px solid #13293d;
+}
+
+  /*This element changes the outline of the button to be blue when hovering over it*/
+form:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+  /*This element changes what our buttons look like when clicked*/
+form:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
+  /*This element changes what our buttons look like once it has already clicked*/
+form:focus {
+    outline: none;
+    border-color: #8ac4ff;
+}
