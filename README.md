@@ -28,7 +28,7 @@ Then it will take you to the option you chose, In this case we clicked on Contac
 Here is an example of what should happen when using the Work section.
 
 ![nav bar 1](./assets/images/hover%201.PNG)
-Click on one of the 5 options. In this case we are overing over Horiseon and when we click it it will open an new tab and take us to the site.
+Click on one of the 5 options. In this case we are overing over Horiseon and when we click it it will open an new tab and take us to the site .
 
 
 ## Credits
